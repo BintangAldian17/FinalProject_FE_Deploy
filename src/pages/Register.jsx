@@ -9,7 +9,7 @@ const Register = () => {
   const [msg, setMsg] = useState(null);
   const onSubmit = async (values) => {
     try {
-      await axios.post("http://localhost:8800/register", values);
+      await axios.post("https://fabiramovie-api.up.railway.app/register", values);
       navigate("/login");
       resetForm();
     } catch (error) {

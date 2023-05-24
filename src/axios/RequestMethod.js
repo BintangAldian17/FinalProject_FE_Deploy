@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const BASE_URL = "http://localhost:8800"
+const BASE_URL = "https://fabiramovie-api.up.railway.app"
 
 export const privateRequest = axios.create({
     baseURL: BASE_URL,

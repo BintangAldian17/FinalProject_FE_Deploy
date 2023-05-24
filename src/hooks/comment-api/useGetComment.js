@@ -4,7 +4,7 @@ import { useQuery } from "react-query";
 
 
 const getComment = async ({ mediaType, mediaId }) => {
-    const { data } = await axios.get(`http://localhost:8800/comment/${mediaType}/${mediaId}`)
+    const { data } = await axios.get(`https://fabiramovie-api.up.railway.app/comment/${mediaType}/${mediaId}`)
     return data
 }
 
