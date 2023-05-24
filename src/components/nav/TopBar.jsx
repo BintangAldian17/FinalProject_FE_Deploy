@@ -8,6 +8,8 @@ import { DataContext } from "../../contextProvider/DataProvider";
 import { Link, useNavigate, NavLink } from "react-router-dom";
 import { privateRequest } from "../../axios/RequestMethod";
 import { AuthContext } from "../../contextProvider/AuthContext";
+import logoLight from "../../assets/logo.png";
+import logoDark from "../../assets/logoDark.png";
 // import './style/Topbar.css'
 
 const Topbar = () => {
@@ -59,7 +61,7 @@ const Topbar = () => {
       }`}>
       <div className="p-1 px-3 lg:px-10 flex items-center justify-between w-full relative">
         <NavLink to="/">
-          <img className="h-12 lg:h-16 inline" src="../assets/logo.png" alt="" />
+          <img className="h-12 lg:h-16 inline" src={`${theme ? logoLight : logoDark}`} alt="" />
         </NavLink>
 
         <div className="flex items-center ml-10 gap-10 text-[15px] lg:text-[18px] font-semibold">
